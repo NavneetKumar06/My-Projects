@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navneet Fintness</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+<style>
+    /*CSS style*/
+    body{
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('img/bg.jpg');
+        font-family: "Sofia", sans-serif;
+        
+    }
+    .left img{
+                width: 130px;
+              
+              
+    }
+    .left{
+        display: inline-block;
+        /* border: 2px solid red;*/
+         position: absolute;
+        left: 34px;
+        top: 20px;
+    }
+    .left div{
+        text-align: center ;
+        font-size: 24px;
+        line-height: 19px;
+    }
+  
+
+    .right{
+        position: absolute;
+        right: 34px;
+        top: 20px;
+        display: inline-block;
+        /*border: 2px solid green;*/
+    }
+    .mid{
+          display: block;
+          width: 50%;
+           margin:20px auto;
+       /* border: 2px solid yellow;*/
+    }
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 25px;
+    }
+    .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 34px 23px;
+    }
+    .navbar li a:hover, .navbar li a:active{
+     text-decoration: underline;
+     color: grey;
+    }
+    .btn{
+        margin: 0px 9px;
+        color: white;
+        background-color: black;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 10px;
+        font-size: 20px;
+        cursor: pointer;
+        font-family: "Sofia", sans-serif;
+    }
+    .btn:hover{
+        color: rgb(93, 85, 85);
+    }
+    .container{
+        /*border: 2px solid green;*/
+        margin: 120px 140px;
+        padding: 10px 110px;
+        width: 40%;
+        border-radius: 10px;
+    }
+    .form-group{
+        font-family: "Sofia", sans-serif;
+        text-align: center;
+        display: block;
+        margin: 15px 90px;
+        padding: 10px 45px;
+        width: 20px;
+        border-radius: 8px;
+
+        width: 340px;
+        
+        border: 2px solid black;
+      
+        font-size: 8px;
+    }
+    .container h1{
+        text-align: center;
+    }
+    .container button{
+        display: block;
+        width: 65%;
+        margin: auto;
+    }
+ 
+</style>
+<body>
+    <header class="header">
+        <!--left box for logo-->
+        <div class="left">
+      <img src="img/gym.png" alt="">
+      <div>Navneet Fitness</div>
+        </div>
+         <!--mid box for navbar-->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+               </ul>
+        </div>
+          <!--right box for buttons-->
+        <div class="right">
+         <Button class="btn">Call Us Now</Button><Button class="btn">Email Us</Button>
+        </div>
+        
+    </header>
+    <div class="container">
+       <h1>Join the best gym of patna</h1>
+       <form action="noaction.php">
+        <div class="form-group">
+           <input type="text" name="" placeholder="Enter your Name">
+        </div>
+
+        <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Age">
+         </div>
+
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Gender">
+         </div>
+
+         <div class="form-group">
+            <input type="text" name="" placeholder="Enter your Locality">
+         </div>
+         <button class="btn">Submit</button>
+       </form>
+    </div>
+</body>
+</html>
